@@ -1,3 +1,5 @@
+# 
+
 # sina_spider
 
 [TOC]
@@ -39,14 +41,10 @@
 
 **Django 环境搭建和配置**
 
-1. python 虚拟开发环境搭建
+```shell
+pip install django==1.8.2 # 安装 1.8.2版本的 Django
+mkdir spider_project && cd spider_project 
+django-admin.py startproject django_spider # init Django project
 
-   ```shell
-   
-   pip install virtualenv # 虚拟环境
-   cd spider project # cd 到一个空目录，创建虚拟环境
-   virtualenv --no-site-packages venv  # 创建一个虚拟的 python 开发环境，名字为 venv，其中默认不包含任何原环境的包，只有几个必要的包
-   source venv/bin/activate # 进入该虚拟环境
-   deactivate # 退出该虚拟环境
-   ```
+```
 
