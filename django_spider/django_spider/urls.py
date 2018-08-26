@@ -19,5 +19,5 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-	url(r'^spider/', include('spider.urls')),
+	url(r'^spider/', include('spider.urls')), # 端口后面以 spider 开始的URL，交给 spider APP 的 URL 来路由
 ]
