@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """django_spider URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -18,4 +19,5 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+	url(r'^spider/', include('spider.urls')),
 ]
