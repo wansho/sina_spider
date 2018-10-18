@@ -41,8 +41,9 @@ pip install MySQL-python # 安装 python 操作 mysql 的接口
 mkdir spider_project && cd spider_project 
 django-admin.py startproject django_spider # init Django project
 cd django_project
-
-python manage.py runserver 10.64.0.95:8000 # 设置开发机的 IP 和端口，并开始运行
+python manage.py migrate # 重新编译
+python manage.py createsuperuser # 创建管理员用户
+python manage.py runserver 0:8000 # 设置开发机的 IP 和端口，并开始运行
 ```
 
 
@@ -136,3 +137,8 @@ DATABASES = {
 
 ```
 
+## Django 已有接口
+
+http://119.23.203.51:8000/admin/
+
+http://119.23.203.51:8000/spider/
