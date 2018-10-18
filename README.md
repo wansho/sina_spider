@@ -36,6 +36,8 @@
 
 ```shell
 pip install django==1.8.2 # 安装 1.8.2版本的 Django
+apt install libmysqlclient-dev # 解决安装 mysql-python 报错的问题
+pip install MySQL-python # 安装 python 操作 mysql 的接口
 mkdir spider_project && cd spider_project 
 django-admin.py startproject django_spider # init Django project
 cd django_project
